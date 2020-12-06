@@ -1,13 +1,13 @@
 import React from 'react';
 import './style.css';
 import SignupWall from './signup-wall-2.jpg';
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button, Checkbox ,Space} from 'antd';
 const layout = {
   labelCol: { span: 5 },
   wrapperCol: { span: 18 },
 };
 const tailLayout = {
-  wrapperCol: { offset: 5, span: 20 },
+  wrapperCol: { offset: 9, span: 20 },
 };
  const onFinish = values => {
     console.log('Success:', values);
@@ -57,12 +57,14 @@ class Signup extends React.Component{
                         </Form.Item>
 
                         <Form.Item {...tailLayout}>
-                            <Button type="primary" htmlType="submit">
-                            Login
-                            </Button>
-                            <Button type="primary" htmlType="submit">
-                            Login
-                            </Button>
+                            <Space>
+                                <Button type="primary" htmlType="submit">
+                                Signup
+                                </Button>
+                                <Button type="primary" htmlType="submit">
+                                Login
+                                </Button>
+                            </Space>
                         </Form.Item>
                     </Form>
                 </div>
