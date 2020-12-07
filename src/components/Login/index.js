@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import LoginWall from './login-wall.jpg'
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button, Checkbox ,Space} from 'antd';
 const layout = {
   labelCol: { span: 5 },
   wrapperCol: { span: 18 },
@@ -50,9 +50,15 @@ class Login extends React.Component{
                         </Form.Item>
 
                         <Form.Item {...tailLayout}>
-                            <Button type="primary" htmlType="submit">
-                            Login
-                            </Button>
+                            <Space>
+                                <Button type="primary" htmlType="submit">
+                                Login
+                                </Button>
+                                <span>OR</span>
+                                <Button type="primary" htmlType="link" href="/signup">
+                                Signup
+                                </Button>
+                            </Space>
                         </Form.Item>
                     </Form>
                 </div>

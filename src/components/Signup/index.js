@@ -61,7 +61,8 @@ class Signup extends React.Component{
                                 <Button type="primary" htmlType="submit">
                                 Signup
                                 </Button>
-                                <Button type="primary" htmlType="submit">
+                                <span>OR</span>
+                                <Button type="primary" htmlType="link" href="/login">
                                 Login
                                 </Button>
                             </Space>
